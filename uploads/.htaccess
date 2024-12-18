@@ -1,0 +1,10 @@
+Options -Indexes
+<FilesMatch "(?i)\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|htm|shtml|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "(?i)\.(gif|jpe?g|png|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
